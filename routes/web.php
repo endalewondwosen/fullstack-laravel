@@ -94,7 +94,7 @@ Route::get('/delete/contact/{id}',[ContactformController::class,'DeleteMessage']
         return view('admin.index');
     })->name('dashboard');
 });  
-Route::get('/login',[UserController::class,'UserLogin'])->name('login');
+ Route::get('/login',[UserController::class,'UserLogin'])->name('login');
  Route::get('/user/logout',[UserController::class, 'LogoutUser'])->name('user.logout'); 
  Route::get('/register',[UserController::class,'Register']);
  Route::post('user/register',[UserController::class,'RegisterUser'])->name('register');
